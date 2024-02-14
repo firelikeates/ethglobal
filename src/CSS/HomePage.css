@@ -1,0 +1,83 @@
+.shapedividers_com-2743 {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(54, 54, 54);
+}
+
+
+
+
+.shapedividers_com-2743 .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    position: relative;
+    z-index: 100000;
+    padding: 20px 24px;
+    width: 50%;
+    border-right: 1px solid rgb(26, 25, 25);
+
+}
+
+.shapedividers_com-2743 .left div {
+    color: rgb(243, 243, 243);
+    font-size: clamp(8px, 1vw, 3rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shapedividers_com-2743 .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    position: relative;
+    z-index: 100000;
+    padding: 20px 24px;
+    width: 50%;
+    border-left: 1px solid rgb(26, 25, 25);
+}
+
+.shapedividers_com-2743 .right div {
+    color: rgb(248, 248, 248);
+    font-size: clamp(8px, 1vw, 3rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.shapedividers_com-2743 .right button {
+    padding: 8px 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    background-color: whitesmoke;
+    appearance: none;
+    outline: none;
+    user-select: none;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid rgb(182, 182, 182);
+    margin-top: 12px;
+    transition: 0.36s;
+
+}
+
+.shapedividers_com-2743 .right button:hover {
+    border: 3px solid white;
+    color: white;
+    background-color: rgb(219, 35, 121);
+}

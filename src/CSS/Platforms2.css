@@ -1,0 +1,183 @@
+.section_paltforms_panel{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    background-color: rgb(40,40,40);
+
+}
+
+.section_paltforms_panel aside{
+    min-height: 100%;
+    width: 22%;
+    padding: 3%;
+    background-color: rgb(238, 238, 238);
+}
+
+.section_paltforms_panel aside div{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section_paltforms_panel aside div .row{
+    margin: 14% 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: max-content;
+    padding: 12px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.section_paltforms_panel aside div .row.active{
+    margin: 14% 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: max-content;
+    padding: 12px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: rgb(222, 222, 222);
+
+}
+
+.section_paltforms_panel aside div .row:hover{
+    background-color: rgb(222, 222, 222);
+}
+
+.section_paltforms_panel aside div .row p{
+    font-size: larger;
+    color: rgb(54, 54, 54);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: clamp(12px,1.2vw,30px);
+}
+
+.section_paltforms_panel aside div .row i{
+    margin-left: 16px;
+    font-size: larger;
+    color: rgb(80,80,80);
+}
+
+.section_paltforms_panel .container{
+    width: 100%;
+    padding: 4% 4%;
+}
+
+.sub_part{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sub_part .left_p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub_part .left_p .logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background-color: rgb(244,244,244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(230,230,230);
+}
+.sub_part .sub_part_x {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sub_part .left_p .logo i{
+    font-size: 3em;
+}
+
+.sub_part .left_p .logo i.fa-youtube{
+    font-size: 3em;
+    color: #FF0000;
+}
+
+.sub_part .left_p .platform_name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+    margin-left: 40px;
+    color: rgb(244,244,244);
+}
+
+.sub_part .sub_btn{
+    outline: none;
+    appearance: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid rgb(200,200,200);
+    padding: 12px 16px;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.92em;
+    margin-left: 40px;
+    color: rgb(35, 35, 35);
+    min-width: 200px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.45s;
+}
+.sub_part .sub_btn p{
+    margin-right: 12px;
+    color: rgb(219,35,121);
+}
+.sub_part .sub_btn:hover{
+    outline: none;
+    appearance: none;
+    user-select: none;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 3px solid rgb(200,200,200);
+    padding: 12px 16px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(219,35,121),rgb(230,230,230));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.92em;
+    margin-left: 40px;
+    color: rgb(35, 35, 35);
+    min-width: 200px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scale: 1.1;
+}
+
+.sub_part .sub_btn:hover p{
+    margin-right: 12px;
+    color: rgb(245, 245, 245);
+}
+
+.text{
+    line-height: 1.6;
+    width: 100%;
+    margin-top: 5%;
+    color: rgb(116, 116, 116);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

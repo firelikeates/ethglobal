@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    width: 100%;
+    min-height: 60px;
+    max-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(31, 30, 30);
+}
+
+nav {
+    width: 100%;
+    background-color: transparent;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(249, 249, 239);
+
+}
+
+nav .left-xs9 {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+nav .left-xs9 p {
+    font-weight: 600;
+    font-size: clamp(16px, 2vw, 100px);
+}
+
+nav .left-xs9 i {
+    font-weight: 600;
+    font-size: clamp(20px, 4vw, 100px);
+    margin-left: clamp(10px, 15px, 20px);
+}
+
+nav .middle-xs9 {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav .middle-xs9 a {
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0;
+    color: whitesmoke;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: clamp(12px, 1.4vw, 30px);
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    /* Geçiş efekti */
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+
+.header_links::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    /* Çizginin kalınlığı */
+    background-color: rgb(219, 35, 121);
+    /* Çizgi rengi */
+    transition: width 0.4s ease-in;
+    /* Geçiş efekti */
+}
+
+.header_links:hover::after {
+    width: 100%;
+    /* Çizgi boyu */
+    border-radius: 12px;
+    height: 5px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    transition: 0.4s;
+    background-color: white;
+    border-radius: 12px;
+    margin-bottom: 6px;
+}
+
+.hidden-list {
+    display: none;
+    position: absolute;
+    left: 100%;
+    transition: 0.38s;
+    opacity: 0;
+    background-color: rgb(49, 49, 49);
+
+}
+
+.wallet_header_link {
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4px 0;
+    color: rgb(181, 181, 181);
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: clamp(12px, 1.4vw, 30px);
+    cursor: pointer;
+    transition: 0.4s ease;
+    /* Geçiş efekti */
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+
+}
+
+.wallet_header_link:hover {
+    background-color: rgb(219, 35, 121);
+    color: whitesmoke;
+}
+
+.header_links_active {
+    border-bottom: 5px solid rgb(219, 35, 121);
+}
+
+
+
+
+@media screen and (max-width:768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .wallet_header_link {
+        display: none;
+
+    }
+
+    .hamburger:hover .second {
+        background-color: rgb(219, 35, 121);
+        transform: translateX(12px);
+    }
+
+    nav .middle-xs9 {
+        display: none;
+    }
+
+    .hamburger_active span:nth-child(1) {
+        transform: translate(-8px, 13px) rotate(-45deg);
+    }
+
+    .hamburger_active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger_active span:nth-child(3) {
+        transform: translate(-8px, -6.5px) rotate(45deg);
+    }
+
+    .hamburger_active:hover span {
+        background-color: rgb(219, 35, 121);
+    }
+
+    .hidden-list_active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        left: 65%;
+        opacity: 1;
+        transition: 0.38s;
+        height: 100%;
+        padding: 0 12px;
+    }
+
+    .hidden-list_active li {
+        width: 100%;
+        margin-bottom: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        background-color: rgb(88, 88, 88);
+        padding: 8px;
+        transition: 0.36s;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .hidden-list_active li:hover {
+        width: 100%;
+        margin-bottom: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+        background-color: rgb(219, 35, 121);
+        padding: 8px;
+        transition: 0.36s;
+    }
+
+    .hidden-list_active li a {
+        text-decoration: none;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        font-size: clamp(12px, 0.95vw, 16px);
+    }
+}
