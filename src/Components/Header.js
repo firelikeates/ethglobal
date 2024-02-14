@@ -5,6 +5,10 @@ import { Link,NavLink } from 'react-router-dom/cjs/react-router-dom.min'
 import Store from '../Store/Store'
 import { set_active_link } from '../Action/Action'
 
+import { useWeb3Modal } from '@web3modal/wagmi/react'
+
+
+
 const Header = (props) => {
 
 
@@ -36,6 +40,7 @@ const Header = (props) => {
 
     }
 
+    const { open } = useWeb3Modal()
 
     return (
         <>
@@ -50,9 +55,8 @@ const Header = (props) => {
                         <NavLink onClick={click_link_func} className="header_links" to="/platforms"> Platforms</NavLink>
                         <NavLink onClick={click_link_func} className="header_links" to={"/about"}> About us</NavLink>
                     </div>
-                    <Link onClick={()=>{
-
-                    }} className='wallet_header_link'> Connect Wallet</Link>
+                    
+                    <button onClick={() => open()} className='wallet_header_link'>Connect Wallet</button>
 
                     <div onClick={() => {
                         document.querySelector(".hamburger").classList.toggle("hamburger_active")

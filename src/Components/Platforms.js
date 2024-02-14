@@ -22,6 +22,7 @@ const Platforms = () => {
                 </div>
                 <div className='err_message'></div>
             </div>
+            <p>&nbsp;</p>
             <div className="box" onClick={click_box}>
                 <div className="logo">
                     <i class="fa-brands fa-youtube"></i>
@@ -29,6 +30,7 @@ const Platforms = () => {
                 </div>
                 <div className='err_message'></div>
             </div>
+            <p>&nbsp;</p>
             <div className="box" onClick={click_box}>
                 <div className="logo">
                     <i className="fa-brands fa-twitch"></i>
@@ -36,8 +38,15 @@ const Platforms = () => {
                 </div>
                 <div className='err_message'></div>
             </div>
+            <p>&nbsp;</p>
+            <div className="box" onClick={click_box}>
+                <div className="logo">
+                    <i class="fa-brands fa-twitch"></i>
+                    <p>Youtube 10.98$</p>
+                </div>
+                <div className='err_message'></div>
+            </div>
 
-            <div className="connect_your_wallet">Connect Your wallet</div>
         </section>
     )
 }
