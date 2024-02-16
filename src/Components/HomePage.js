@@ -1,7 +1,10 @@
 import React from 'react'
 import "../CSS/HomePage.css"
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min'
 
 const HomePage = () => {
+
+  const history = useHistory()
 
   return (
     <section className='shapedividers_com-2743'>
@@ -14,7 +17,7 @@ const HomePage = () => {
         <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis distinctio culpa cupiditate sint hic quam repudiandae ratione beatae dignissimos! <br />
           Ad dicta facere, repudiandae expedita ipsum dolore facilis. Corrupti, voluptates et.</div>
 
-        <button id='worm'>Enter Email</button>
+        <button onClick={()=>{history.push("/email")}} id='worm'>Enter Email</button>
       </div>
     </section>
   )
