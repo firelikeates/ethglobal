@@ -5,6 +5,7 @@ import HomePage from './Components/HomePage';
 import Login from './Components/Login';
 import Platforms from './Components/Platforms';
 import Platforms2 from './Components/Platforms2';
+import EmailPage from './Components/EmailPage';
 
 const App = () => {
   return (
@@ -21,6 +22,10 @@ const App = () => {
         <Route path="/platforms/:platform">
           <Header/>
           <Platforms2/>
+        </Route>
+        <Route exact path="/email">
+          <Header/>
+          <EmailPage/>
         </Route>
         <Route path="/login">
           <Login/>

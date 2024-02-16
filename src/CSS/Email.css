@@ -1,0 +1,463 @@
+.email_section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 5%;
+}
+
+.email_main_title {
+    color: rgb(70, 70, 70);
+    font-size: clamp(16px, 2vw, 49px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgb(219, 35, 121);
+    margin: 2% 0;
+}
+
+.child_desc {
+    display: block;
+    text-align: center;
+    width: 60%;
+    font-weight: 600;
+    color: rgb(98, 98, 97);
+    font-size: clamp(12px, 1.4vw, 30px);
+    line-height: 1.6;
+}
+
+.change_type {
+    margin-top: 4%;
+    width: 50%;
+    display: flex;
+    background-color: rgb(48, 48, 48);
+    border-radius: 6px;
+    padding: 24px 16px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.change_type .btn {
+
+    outline: none;
+    user-select: none;
+    appearance: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(248, 248, 248);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.4s;
+}
+
+.change_type .btn.active {
+    background-color: rgb(84, 84, 84);
+
+}
+
+.change_type .btn:hover {
+    background-color: rgb(84, 84, 84);
+}
+
+.create_email_part {
+    margin-top: 2%;
+    padding: 20px;
+    width: 45%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3.5px solid rgb(48, 48, 48);
+    border-radius: 4px;
+}
+
+.create_email_part .create_email_main_title {
+    display: block;
+    text-align: center;
+    width: 60%;
+    font-weight: 600;
+    color: rgb(252, 252, 252);
+    font-size: clamp(12px, 2vw, 30px);
+}
+
+.create_email_part .create-email_main_desc {
+    display: block;
+    text-align: center;
+    width: 60%;
+    font-weight: 600;
+    color: rgb(113, 113, 113);
+    font-size: clamp(12px, 1.2vw, 30px);
+}
+
+.create_email_part .input-group {
+    width: 100%;
+    padding: 12px;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.create_email_part .input-group input {
+    width: 95%;
+    margin-right: 12px;
+    outline: none;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create_email_part .input-group button {
+    width: 20%;
+    background-image: linear-gradient(to right, rgb(219, 35, 121), rgb(230, 230, 230));
+
+    margin-right: 12px;
+    outline: none;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+    color: rgb(48, 48, 48);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: larger;
+
+}
+
+.create_email_part .input-group button:hover {
+    background-image: none;
+    background-color: rgb(219, 35, 121);
+}
+
+.create_email_part .input-group .err {
+    margin-top: 4px;
+    color: rgb(224, 20, 84);
+    font-size: 11px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bottom_que {
+    margin: 8px 0;
+    color: rgb(122, 122, 122);
+    font-weight: 600;
+    user-select: none;
+    cursor: pointer;
+}
+
+.bottom_que:hover {
+    text-decoration: underline;
+}
+
+.active_send_money_part {
+    margin-top: 2%;
+    padding: 20px;
+    width: 70%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3.5px solid rgb(48, 48, 48);
+    border-radius: 4px;
+}
+
+.active_send_money_part .send_money_main_title {
+    display: block;
+    text-align: center;
+    width: 60%;
+    font-weight: 600;
+    color: rgb(252, 252, 252);
+    font-size: clamp(12px, 2vw, 30px);
+    margin-bottom: 4px;
+}
+
+.active_send_money_part .send_money_main_desc {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    color: rgb(113, 113, 113);
+    font-size: clamp(12px, 1.2vw, 30px);
+}
+
+.active_send_money_part .email_to {
+    width: 100%;
+    margin: 6px 0;
+    border-bottom: 0.6px solid rgb(98, 98, 97);
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.active_send_money_part .email_to p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.active_send_money_part .email_to input {
+    width: 60%;
+    margin-left: 24px;
+    border: 1px solid rgb(158, 158, 158);
+    background-color: rgb(48, 48, 48);
+    outline: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    color: rgb(239, 239, 239);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active_send_money_part .email_to input:focus {
+    border: 1px solid rgb(239, 239, 239)
+}
+
+.active_send_money_part .cc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0;
+    border-bottom: 0.6px solid rgb(98, 98, 97);
+
+}
+
+.active_send_money_part .cc p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 600;
+}
+
+.active_send_money_part .cc h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(253, 253, 253);
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 600;
+}
+
+.active_send_money_part .cc i {
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    margin-right: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.active_send_money_part .cc i:hover {
+    color: rgb(219, 35, 121);
+}
+
+
+select {
+    /* Reset Select */
+    width: 100%;
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    background-color: rgb(140, 140, 140);
+    background-image: none;
+    cursor: pointer;
+}
+
+/* Remove IE arrow */
+select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select wrapper */
+.select {
+    position: relative;
+    display: flex;
+    width: 180px;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+}
+
+/* Arrow */
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #f2f3f4;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+/* Transition */
+.select:hover::after {
+    color: #f39c12;
+}
+
+.active_send_money_part .amount_part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 12px 0;
+    border-bottom: 0.6px solid rgb(98, 98, 97);
+
+}
+
+.active_send_money_part .amount_part p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(122, 122, 122);
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 600;
+}
+
+.active_send_money_part .amount_part h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(253, 253, 253);
+    font-size: 14px;
+    margin-right: 24px;
+    font-weight: 600;
+}
+
+.active_send_money_part .amount_part i {
+    color: rgb(253, 253, 253);
+    font-size: 20px;
+    margin-right: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.active_send_money_part .amount_part i:hover {
+    color: rgb(219, 35, 121);
+}
+.active_send_money_part .amount_part .networks_inputs{
+    display: flex;
+    width: 80%;
+}
+.active_send_money_part .amount_part .networks_inputs .amount_input{
+    width: 28%;
+    margin-left: 8px;
+    margin-right: 8px;
+    border: 1px solid rgb(158, 158, 158);
+    background-color: rgb(48, 48, 48);
+    outline: none;
+    padding: 12px 8px;
+    border-radius: 12px;
+    color: rgb(239, 239, 239);
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.email_or_wallet_desc{
+    width: 60%;
+    margin-top: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    color: rgb(113, 113, 113);
+    position: relative;
+    right: 4%;
+}
+
+.active_send_money_part .message_text_area{
+    width: 100%;
+    margin: 1% 0;
+    display: flex;
+    justify-content: center;
+}
+.active_send_money_part .message_text_area textarea{
+    width: 90%;
+    margin-top: 12px;
+    padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    color: rgb(230, 230, 230);
+    background-color: rgb(98, 98, 97);
+    border: 3px solid rgb(40, 40, 40);
+    appearance: none;
+    outline: none;
+    resize: none;
+    height: 10%;
+}
+
+.active_deposit_part{
+    margin-top: 2%;
+    padding: 20px;
+    width: 60%;
+    height: 30vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3.5px solid rgb(48, 48, 48);
+    border-radius: 4px;
+}
+
+.active_deposit_part .deposit_main_title {
+    display: block;
+    text-align: center;
+    width: 60%;
+    font-weight: 600;
+    color: rgb(252, 252, 252);
+    font-size: clamp(12px, 2vw, 30px);
+    margin-bottom: 24px;
+}
+
+.active_deposit_part .deposit_main_desc {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    color: rgb(209, 209, 209);
+    font-size: clamp(12px, 1.2vw, 30px);
+}
+.active_send_money_part .bottom{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.active_send_money_part .bottom button{
+    padding: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 5%;
+    align-items: center;
+    outline: none;
+    appearance: none;
+    border-radius: 8px;
+    border: 3px solid rgb(162, 162, 162);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    min-width: 130px;
+    margin: 12px 0;
+    transition: 0.4s all ease;
+}
+
+.active_send_money_part .bottom button:hover{
+    border: 3px solid rgb(224, 20, 84);
+    scale: 1.12;
+}
