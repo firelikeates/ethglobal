@@ -22,7 +22,7 @@
     padding: 20px 24px;
     width: 50%;
     border-right: 1px solid rgb(26, 25, 25);
-
+    z-index: 0;
 }
 
 .shapedividers_com-2743 .left div {
@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 0;
 }
 
 .shapedividers_com-2743 .right {
@@ -45,6 +46,7 @@
     padding: 20px 24px;
     width: 50%;
     border-left: 1px solid rgb(26, 25, 25);
+    z-index: 0;
 }
 
 .shapedividers_com-2743 .right div {
@@ -55,6 +57,7 @@
     align-items: center;
     justify-content: center;
     margin: 20px 0;
+    z-index: 0;
 }
 
 .shapedividers_com-2743 .right button {

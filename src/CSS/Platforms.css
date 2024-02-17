@@ -13,15 +13,16 @@
     align-items: center;
     justify-content: center;
     background-color: rgb(55, 55, 55);
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
+    width: 100%; /* Set width to 100% to fit the container's width */
+     /* Set a maximum width if needed */
+    height: 120px; /* You can adjust the height if necessary */
+    border-radius: 10px; /* Set border-radius to create a rectangle */
     font-size: xx-large;
-    border: 3px solid rgba(219, 35, 121,0.4);
+    border: 3px solid rgba(219, 35, 121, 0.4);
     cursor: pointer;
     transition: 0.5s;
-
 }
+
 
 .platforms1-section .box:hover{
     border: 3px solid rgba(219, 35, 121,1);
@@ -38,11 +39,6 @@
     color: #6441a5;
 }
 
-.platforms1-section .box:nth-child(1){
-    width: 200px;
-    height: 150px;
-    margin-left: -35%;
-}
 .platforms1-section .box .logo{
     display: flex;
     align-items: center;
@@ -67,17 +63,6 @@
 
 }
 
-.platforms1-section .box:nth-child(2){
-    width: 200px;
-    height: 150px;
-    margin-left: 35%;
-}
-
-.platforms1-section .box:nth-child(3){
-    width: 200px;
-    height: 150px;
-    margin-left: -35%;
-}
 
 .err_message{
     margin-top: 180px;
