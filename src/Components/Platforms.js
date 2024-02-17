@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "../CSS/Platforms.css"
-
+import { useWeb3Modal } from '@web3modal/wagmi/react'
 const Platforms = () => {
 
 
@@ -12,7 +12,7 @@ const Platforms = () => {
             div.innerHTML = ""
         }, 4000)
     }
-
+    const { open } = useWeb3Modal()
     return (
         <section className="platforms1-section">
             <div className="box" onClick={click_box}>
@@ -36,8 +36,8 @@ const Platforms = () => {
                 </div>
                 <div className='err_message'></div>
             </div>
-
-            <div className="connect_your_wallet">Connect Your wallet</div>
+            <button onClick={() => open()} className='connect_your_wallet'>Connect Wallet</button>
+            
         </section>
     )
 }
